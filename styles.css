@@ -1,0 +1,38 @@
+:root {
+    --max-width: 1150px;
+}
+
+* {
+    font-family: 'Source Sans Pro' !important;
+}
+
+.hero-section {
+    background-image: url('./images/pic_1.jpg');
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.logo-container img {
+    height: 2rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-list li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-left: 2rem;
+}
+
