@@ -1,25 +1,43 @@
 :root {
     --max-width: 1150px;
+    --purple-color: #C271FF;
 }
 
 * {
-    font-family: 'Source Sans Pro' !important;
+    font-family: 'Source sans pro', 'Spin Cycle', 'holberton_school-icon', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    color: white;
 }
 
 .hero-section {
     background-image: url('./images/pic_1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     max-width: var(--max-width);
     margin: auto;
 }
 
+.nav-btn {
+    display: none;
+}
+
+#small-nav-handler {
+    display: none;
+}
+
+.logo-container {
+    float: left;
+}
+
 .logo-container img {
     height: 2rem;
+}
+
+.logo-container img:first-child {
+    margin-right: 1rem;
 }
 
 .nav-list {
@@ -27,6 +45,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
+    float: right;
 }
 
 .nav-list li a {
@@ -34,5 +53,99 @@
     text-decoration: none;
     color: white;
     margin-left: 2rem;
+}
+
+.big-title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 5rem auto -1rem;
+}
+
+.subtitles {
+    color: white
+}
+
+.btn {
+    background-color: var(--purple-color) !important;
+    display: block;
+}
+
+.purple-text {
+    color: var(--purple-color);
+}
+
+.small-title {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.terminonials {
+    max-width: var(--max-width);
+}
+
+.testimonials img {
+    width: 125px;
+    height: 125px;
+}
+
+@media screen and (max-width: 576px) {
+    .logo-container {
+        float: none;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 180px;
+    }
+
+    .logo-container img:first-child {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        max-width: 42px;
+    }
+
+    .nav-btn {
+        float: left;
+        display: block;
+        height: 3px;
+        width: 1.35rem;
+        background-color: white;
+        margin-top: 1rem;
+    }
+
+    .nav-btn::before {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 2rem;
+        margin-top: 10px;
+        background-color: white;
+    }
+
+    .nav-btn::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 2rem;
+        margin-top: -23px;
+        background-color: white;
+    }
+
+    .nav-list {
+        display: none;
+        float: none;
+        text-align: center;
+        margin: 5rem auto;
+    }
+
+    .nav-list li {
+        margin-bottom: 1rem;
+    }
+
+    input#small-nav-handler:checked ~ .nav-list {
+        display: block;
+    }
 }
 
