@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'holberton_school-icon';
-    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
-    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
-      url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
-      url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
-      url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    src:  url('./icons/fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('./icons/fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('./icons/fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('./icons/fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('./icons/fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -97,6 +97,7 @@
     font-family: 'Source sans pro', 'Spin Cycle', 'holberton_school-icon', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
     color: white;
 }
+
 
 /*  HERO SECTION */
 .hero-section {
@@ -236,18 +237,30 @@
     }
 }
 
-/* CAROUSEL SECTION */
+/* Quotes CAROUSEL SECTION */
 
-.carousel-section {
+.quotes-section {
     background-color: var(--purple-color);
 }
 
-.carousel-section img {
+.quotes-section img {
     width: 125px;
     height: 125px;   
 }
 
 .carousel-item-content {
     padding-right: 80px;
-    padding-left: 55px;
+    padding-left: 80px;
+}
+
+/* Videos CAROUSEL SECTION */
+
+.video-carousel-img-profile {
+    height: 30px;
+    width: 30px;
+}
+
+.carousel-star-icon {
+    height: 1rem;
+    width: 1rem;
 }
