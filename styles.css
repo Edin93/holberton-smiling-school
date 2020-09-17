@@ -100,13 +100,22 @@
     color: white;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
+/* ---------- HOMEPAGE ----------  */
 /*  HERO SECTION */
 .hero-section {
     background-image: url('./images/pic_1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+main.pricing-main .hero-section {
+  background-image: url('./images/pic_2.jpg');
 }
 
 .header {
@@ -147,6 +156,12 @@
     text-decoration: none;
     color: white;
     margin-left: 2rem;
+}
+
+.nav-list li a.active {
+  color: var(--purple-color);
+  border-bottom: 2px solid white;
+  padding-bottom: 4px;
 }
 
 .big-title {
@@ -334,3 +349,11 @@ footer > div:last-child {
 .social-media-icons i:not(:first-child) {
   margin-left: 20px;
 }
+
+/* ---------- PRICING PAGE ----------  */
+
+.text-logo {
+  margin-top: 200px;
+  flex-wrap: wrap;
+}
+
