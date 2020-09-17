@@ -265,10 +265,7 @@
     width: 1rem;
 }
 
-.video-carousel-content {
-  padding-right: 120px;
-  padding-left: 120px;
+.videos-slides-container {
+  padding: 0 100px;
 }
-
-
 
