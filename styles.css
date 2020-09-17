@@ -91,6 +91,7 @@
 :root {
     --max-width: 1150px;
     --purple-color: #C271FF;
+    --section-padding: 90px 0;
 }
 
 * {
@@ -241,6 +242,7 @@
 
 .quotes-section {
     background-color: var(--purple-color);
+    padding: var(--section-padding);
 }
 
 .quotes-section img {
@@ -254,6 +256,10 @@
 }
 
 /* Videos CAROUSEL SECTION */
+
+.tutorial-section {
+  padding: var(--section-padding);
+}
 
 .video-carousel-img-profile {
     height: 30px;
@@ -269,3 +275,6 @@
   padding: 0 100px;
 }
 
+.videos-slides-container .carousel-inner {
+  flex-basis: 50% !important;
+}
