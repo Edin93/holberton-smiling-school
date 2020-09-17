@@ -302,3 +302,35 @@
   max-width: 250px;
 }
 
+/* FOOTER */
+
+footer {
+  background-color: var(--blue-color);
+  padding: var(--section-padding);
+}
+
+footer .logo-container {
+  float: none;
+}
+
+footer > div:first-child {
+  margin-bottom: 50px;
+}
+
+footer > div:last-child {
+  opacity: 35%;
+}
+
+.social-media-icons > div:first-child{
+  width: 130px;
+  max-width: 130px;
+}
+
+.social-media-icons i {
+  font-size: 30px;
+  color: white;
+}
+
+.social-media-icons i:not(:first-child) {
+  margin-left: 20px;
+}
