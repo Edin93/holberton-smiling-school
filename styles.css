@@ -95,6 +95,7 @@
     --section-padding: 90px 0;
     --table-row-bottom-border: 1px solid #394454;
     --green-color: #82D24F;
+    --black-color: #071629;
 }
 
 * {
@@ -354,11 +355,13 @@ footer > div:last-child {
 
 /* ---------- PRICING PAGE ----------  */
 
+/* HERO Section */
 .text-logo {
   margin-top: 200px;
   flex-wrap: wrap;
 }
 
+/* Pricing Table styling */
 .th-title {
   font-size: 44px;
 }
@@ -415,5 +418,31 @@ tbody tr:first-child {
     min-width: 95px;
     padding-bottom: 0px;
   }
+}
+
+/* FAQ Section */
+
+.faq-section {
+  padding: var(--section-padding);
+}
+
+.faq-section h1, .faq-section h2, .faq-section .faq-answer {
+  color: var(--black-color) !important;
+}
+
+.faq-section h1 {
+  font-size: 60px !important;
+  margin-bottom: 75px;
+}
+
+.one-faq h2 {
+  margin-left: -2px !important;
+}
+
+.faq-section .faq-answer {
+  font-weight: 14px;
+  opacity: 50%;
+  margin-bottom: 75px;
+  text-align: justify;
 }
 
