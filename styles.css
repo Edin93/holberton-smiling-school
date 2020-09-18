@@ -121,6 +121,10 @@ main.pricing-main .hero-section {
   background-image: url('./images/pic_2.jpg');
 }
 
+main.courses-main .hero-section {
+  background-image: url('./images/pic_3.jpg');
+}
+
 .header {
     max-width: var(--max-width);
     margin: auto;
@@ -446,3 +450,13 @@ tbody tr:first-child {
   text-align: justify;
 }
 
+/* --------- COURSES PAGE ---------- */
+
+.pricing-page-title {
+  font-size: 32px !important;
+  font-family: Coiny !important;
+}
+
+.pricing-page-title span {
+  font-family: inherit !important;
+}
