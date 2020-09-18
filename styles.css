@@ -93,6 +93,8 @@
     --purple-color: #C271FF;
     --blue-color: #071629;
     --section-padding: 90px 0;
+    --table-row-bottom-border: 1px solid #394454;
+    --green-color: #82D24F;
 }
 
 * {
@@ -355,5 +357,63 @@ footer > div:last-child {
 .text-logo {
   margin-top: 200px;
   flex-wrap: wrap;
+}
+
+.th-title {
+  font-size: 44px;
+}
+
+.table-btn {
+  padding: 13px 36px;
+}
+
+table .table-btn {
+  min-width: 180px;
+}
+
+.table-subtitle {
+  font-size: 12px;
+  opacity: 50%;
+  font-weight: 400;
+}
+
+.tr-title {
+  font-weight: 400 !important;
+  font-size: 18px;
+}
+
+.bordered-table-row {
+  border-bottom: var(--table-row-bottom-border);
+}
+
+.table td, .table th {
+  padding: 1.25rem;
+}
+
+table i {
+  color: var(--green-color);
+  font-size: 28px;
+}
+
+tbody tr:first-child {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+
+  thead {
+    display: none;
+  }
+
+  tbody tr:first-child {
+    display: table-row;
+  }
+
+  tbody tr:first-child td {
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 95px;
+    padding-bottom: 0px;
+  }
 }
 
